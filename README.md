@@ -14,4 +14,4 @@ The pdf version was generated using [decktape](https://github.com/astefanutti/de
 
 Please feel free to adapt and re-use these slides, see LICENSE.
 
-To get started, clone this repository and then open reveal.js/talk.html in your browser.
+To get started, clone this repository and then open reveal.js/index.html in your browser.
