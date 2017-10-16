@@ -1,12 +1,10 @@
-# Drupal 8 User Guide - let's have a German Translation
+# Automated CSS Regression Testing
 
-These are the slides for a talk given at Drupalcamp Frankfurt on Saturday 22 April 2017:
-
-https://2017.drupalcamp-frankfurt.de/node/189
+These are the slides for a talk given at Drupalcamp Schwerin:
 
 The pdf of the slides can be downloaded here:
 
-https://github.com/michaellenahan/drupal-8-user-guide-translation/raw/master/drupal-8-user-guide-translation.pdf
+https://github.com/loonyluna/automated-css-regression-testing/raw/master/automated-css-regression-testing.pdf
 
 The slides were created using [reveal.js](https://github.com/hakimel/reveal.js).
 
@@ -15,3 +13,5 @@ The pdf version was generated using [decktape](https://github.com/astefanutti/de
 Please feel free to adapt and re-use these slides, see LICENSE.
 
 To get started, clone this repository and then open reveal.js/index.html in your browser.
+
+NOTE: This Repo is a clone of https://github.com/michaellenahan/drupal-8-user-guide-translation
