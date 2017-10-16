@@ -1,232 +1,275 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+<head>
+  <meta charset="utf-8">
 
-		<title>Automated CSS Regression Testing</title>
+  <title>Automated CSS Regression Testing</title>
 
-		<meta name="description" content="Automated CSS Regression Testing">
-		<meta name="author" content="Janet Lehmann">
+  <meta name="description" content="Automated CSS Regression Testing">
+  <meta name="author" content="Janet Lehmann">
 
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/blood.css" id="theme">
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/blood.css" id="theme">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylsheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylsheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
 
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
+  <!--[if lt IE 9]>
+  <script src="lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
 
-	<body>
+<body>
 
-		<div class="reveal">
+<div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				<section data-background="images/ef-logo-freigestellt.png" data-background-size="2000px">
-					<h2>Automated CSS Regression Testing</h2>
-					<p>
-						Janet Lehmann
-					</p>
-				</section>
+  <!-- Any section element inside of this container is displayed as a slide -->
+  <div class="slides">
+    <section data-background="images/ef-logo-freigestellt.png" data-background-size="2000px">
+      <h2>Automated CSS Regression Testing</h2>
+      <p>
+        Janet Lehmann
+      </p>
+    </section>
 
-				<section data-background="images/ef-logo-freigestellt.png" data-background-size="2000px">
-						Duale Studentin bei <a href="https://erdfisch.de/">erdfisch</a> in Heidelberg, Germany
-						</br>
-						Zu finden unter <a href="https://www.drupal.org/u/loonyluna">loonyluna</a> auf Drupal.org & Github
-						</br>
-						<a href="https://twitter.com/ChosenLuna">@ChosenLuna</a> auf Twitter
-						</br>
-						<img src="images/janet.png" width="200px" height="200px">
-				</section>
+    <section data-background="images/ef-logo-freigestellt.png" data-background-size="2000px">
+      Duale Studentin bei <a href="https://erdfisch.de/">erdfisch</a> in Heidelberg, Germany
+      </br>
+      Zu finden unter <a href="https://www.drupal.org/u/loonyluna">loonyluna</a> auf Drupal.org & Github
+      </br>
+      <a href="https://twitter.com/ChosenLuna">@ChosenLuna</a> auf Twitter
+      </br>
+      <img src="images/janet.png" width="200px" height="200px">
+    </section>
 
-				<section data-background="images/ef-logo-freigestellt.png" data-background-size="2000px">
-					Frontend-Entwickler bei <a href="https://erdfisch.de/">erdfisch</a> in Heidelberg
-					</br>
-					Zu finden unter <a href="https://www.drupal.org/u/fisherman90">fisherman90</a> auf Drupal.org & Github
-					</br>
-					<a href="https://twitter.com/F90er">@F90er</a> auf Twitter
-					</br>
-					<img src="images/peter-gerken-foto.1024x1024.jpg" width="200px" height="200px">
-				</section>
+    <section data-background="images/ef-logo-freigestellt.png" data-background-size="2000px">
+      Frontend-Entwickler bei <a href="https://erdfisch.de/">erdfisch</a> in Heidelberg
+      </br>
+      Zu finden unter <a href="https://www.drupal.org/u/fisherman90">fisherman90</a> auf Drupal.org & Github
+      </br>
+      <a href="https://twitter.com/F90er">@F90er</a> auf Twitter
+      </br>
+      <img src="images/peter-gerken-foto.1024x1024.jpg" width="200px" height="200px">
+    </section>
 
-				<section>
-					<div>
-						<h1>Folien</h1>
-						<a href=" https://github.com/LoonyLuna/automated-css-regression-testing">https://github.com/LoonyLuna/automated-css-regression-testing</a>
-					</div>
-				</section>
+    <section>
+      <div>
+        <h2>Folien</h2>
+        <a href=" https://github.com/LoonyLuna/automated-css-regression-testing">https://github.com/LoonyLuna/automated-css-regression-testing</a>
+      </div>
+    </section>
 
-				<section>
-					<h2>Was ist Automated CSS Regression Testing?</h2>
-				</section>
+    <!--Let's go!-->
+    <section>
+      <h2>Was ist Automated CSS Regression Testing?</h2>
+    </section>
 
-				<section>
-					<h5>Leitfrage:</h5>
-					<h5 class="fragment">Wie sieht meine Webseite aus, nachdem ich Änderungen vorgenommen habe?</h5>
-				</section>
+    <section>
+      <h3>Leitfrage:</h3>
+      <h5 class="fragment">Wie sieht meine Webseite aus, nachdem ich Änderungen vorgenommen habe?</h5>
+    </section>
 
-				<section>
-					<h2>Idealfall</h2>
-					<div class="fragment">
-						<img src="images/dog.jpg" width="300px" height="300px">
-						<p>Veränderungen sind nur an der "gewollten" Stelle erfolgt.</p>
-					</div>
-				</section>
+    <section>
+      <h2>Idealfall</h2>
+      <div class="fragment">
+        <img src="images/dog.jpg" width="300px" height="300px">
+        <p>Veränderungen sind nur an der "gewollten" Stelle erfolgt.</p>
+      </div>
+    </section>
 
-				<section>
-					<h2>Worst Case</h2>
-					<div class="fragment">
-						<img src="images/css.gif">
-						<p>Veränderungen überall, bloß nicht da wo sie sein sollen.</p>
-					</div>
-				</section>
+    <section>
+      <h2>Worst Case</h2>
+      <div class="fragment">
+        <!--A wild Jerry appears-->
+        <img src="images/css.gif">
+        <p>Veränderungen überall, bloß nicht da wo sie sein sollen.</p>
+      </div>
+    </section>
 
-				<section>
-					<h2>Was tun, um das zu verhindern?</h2>
-				</section>
-				
-				<section>
-					<img src="images/Test_All_The_Things.jpg">
-					<p class="fragment">Von Hand? :(</p>
-				</section>
-				
-				<section>
-					<img src="images/circle%20of%20no.jpg">
-				</section>
+    <section>
+      <h2>Was tun, um das zu verhindern?</h2>
+    </section>
 
-				<section>
-					<h2> Deshalb: Automated CSS Regresstion Testing</h2>
-					<img src="images/excited.gif">
-				</section>
+    <section>
+      <img src="images/Test_All_The_Things.jpg">
+      <p class="fragment">Von Hand? :(</p>
+    </section>
 
-				<section>
-					<h5>Die Funktionsweise</h5>
-					<img src="images/output.png" style="border: none">
-				</section>
+    <section>
+      <!--Just NO-->
+      <img src="images/circle%20of%20no.jpg">
+    </section>
 
-				<section>
-					<h5>Das Tool</h5>
-					<!--Ich hasse Inline CSS auch, sorry!-->
-					<img src="images/phantomcss.png" width="300px"
-							 style="border: none;
+    <section>
+      <h2> Deshalb: Automated CSS Regresstion Testing</h2>
+      <!--Get schwifty!-->
+      <img src="images/excited.gif">
+    </section>
+
+    <section>
+      <h5>Die Funktionsweise</h5>
+      <img src="images/output.png" style="border: none">
+    </section>
+
+    <section>
+      <h5>Das Tool</h5>
+      <!--I hate Inline CSS too, sorry!-->
+      <!--Hope nobody is reading this...-->
+      <img src="images/phantomcss.png" width="300px"
+           style="border: none;
 							 box-shadow: none;
 							 background-color: LightGray;
 							 padding: 5px">
-					<a href="https://github.com/Huddle/PhantomCSS">https://github.com/Huddle/PhantomCSS</a>
-				</section>
+      <a href="https://github.com/Huddle/PhantomCSS">https://github.com/Huddle/PhantomCSS</a>
+    </section>
 
-				<section>
-					<h3>Was muss ich jetzt noch machen?</h3>
-				</section>
+    <section>
+      <h5>Die Umgebung</h5>
+      <img src="images">
+    </section>
 
-				<section>
-				<img src="images/endmeme.png">
-				</section>
+    <section>
+      <h5>Umsetzung</h5>
+      <img src="images">
+    </section>
+    
+    <section>
+      <!--Show Case-->
+      <img src="images/show%20me.gif">
+    </section>
 
-			</div>
+    <section>
+      <!--DONE-->
+      <img src="images/good%20job.gif">
+    </section>
 
-		</div>
+    <!--THE END-->
+    <section>
+      <h3>Was muss ich jetzt noch machen?</h3>
+    </section>
 
-		<div id="myLogo" style="background: url("logo.png");
-			position: absolute;
-			bottom: 100px;
-			right: 100px;
-			width: 100px;
-			height: 100px;"></div>
+    <section>
+      <img src="images/endmeme.png">
+    </section>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+  </div>
 
-		<script>
+</div>
 
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+<div id="myLogo" style="background: url(" logo.png
+");
+position: absolute;
+bottom: 100px;
+right: 100px;
+width: 100px;
+height: 100px;"></div>
 
-				// transition: 'slide', // none/fade/slide/convex/concave/zoom
-				transition: 'fade', // none/fade/slide/convex/concave/zoom
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
 
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
+<script>
 
-		</script>
+  // More info https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
 
-		<style type="text/css">
-		    /* 1. Style header/footer <div> so they are positioned as desired. */
-		    #header-left {
-		        position: absolute;
-		        top: 0%;
-		        left: 0%;
-		    }
-		    #header-right {
-		        position: absolute;
-		        top: 0%;
-		        right: 0%;
-		    }
-		    #footer-left {
-		        position: absolute;
-		        bottom: 50px;
-		        left: 50px;
-		    }
-		</style>
+    // transition: 'slide', // none/fade/slide/convex/concave/zoom
+    transition: 'fade', // none/fade/slide/convex/concave/zoom
 
-		<!-- 2. Create hidden header/footer <div> -->
-		<div id="hidden" style="display:none;">
-		    <div id="header">
-		        <div id="header-left">
-		        </div>
-		        <div id="header-right">
-		        </div>
-		        <div id="footer-left">
-		        	<!-- <a href="https://twitter.com/hashtag/dcffm17">#dcffm17</a> -->
-		        	<!-- <br> -->
-							<!-- <a href="https://erdfisch.de/">erdfisch</a> -->
-		        </div>
-		    </div>
-		</div>
+    // More info https://github.com/hakimel/reveal.js#dependencies
+    dependencies: [
+      {
+        src: 'lib/js/classList.js', condition: function () {
+        return !document.body.classList;
+      }
+      },
+      {
+        src: 'plugin/markdown/marked.js', condition: function () {
+        return !!document.querySelector('[data-markdown]');
+      }
+      },
+      {
+        src: 'plugin/markdown/markdown.js', condition: function () {
+        return !!document.querySelector('[data-markdown]');
+      }
+      },
+      {
+        src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+        hljs.initHighlightingOnLoad();
+      }
+      },
+      {src: 'plugin/zoom-js/zoom.js', async: true},
+      {src: 'plugin/notes/notes.js', async: true}
+    ]
+  });
 
-		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-		<script type="text/javascript">
-		    // 3. On Reveal.js ready event, copy header/footer <div> into each `.slide-background` <div>
-		    var header = $('#header').html();
-		    if ( window.location.search.match( /print-pdf/gi ) ) {
-		        Reveal.addEventListener( 'ready', function( event ) {
-		            $('.slide-background').append(header);
-		        });
-		    }
-		    else {
-		        $('div.reveal').append(header);
-		   }
-		</script>
+</script>
 
-	</body>
+<style type="text/css">
+  /* 1. Style header/footer <div> so they are positioned as desired. */
+  #header-left {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+  }
+  #header-right {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+  }
+  #footer-left {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+  }
+</style>
+
+<!-- 2. Create hidden header/footer <div> -->
+<div id="hidden" style="display:none;">
+  <div id="header">
+    <div id="header-left">
+    </div>
+    <div id="header-right">
+    </div>
+    <div id="footer-left">
+      <!-- <a href="https://twitter.com/hashtag/dcffm17">#dcffm17</a> -->
+      <!-- <br> -->
+      <!-- <a href="https://erdfisch.de/">erdfisch</a> -->
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script type="text/javascript">
+  // 3. On Reveal.js ready event, copy header/footer <div> into each `.slide-background` <div>
+  var header = $('#header').html();
+  if (window.location.search.match(/print-pdf/gi)) {
+    Reveal.addEventListener('ready', function (event) {
+      $('.slide-background').append(header);
+    });
+  }
+  else {
+    $('div.reveal').append(header);
+  }
+</script>
+
+</body>
 </html>
