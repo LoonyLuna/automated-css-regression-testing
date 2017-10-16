@@ -15,7 +15,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/moon.css" id="theme">
+		<link rel="stylesheet" href="css/theme/blood.css" id="theme">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -40,198 +40,106 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section data-background="images/ef-logo-freigestellt.png">
-					<h1>Automated CSS Regression Testing</h1>
-					<!-- <img src="images/druploisius-small.png"> -->
+				<section data-background="images/ef-logo-freigestellt.png" data-background-size="2000px">
+					<h2>Automated CSS Regression Testing</h2>
 					<p>
 						Janet Lehmann
 					</p>
 				</section>
 
-				<section>
+				<section data-background="images/ef-logo-freigestellt.png" data-background-size="2000px">
 						Duale Studentin bei <a href="https://erdfisch.de/">erdfisch</a> in Heidelberg, Germany
-						<br>
-						Zu finden unter <a href="https://www.drupal.org/u/loonyluna">loonyluna</a> auf Drupal.org und Github
-						<br>
+						</br>
+						Zu finden unter <a href="https://www.drupal.org/u/loonyluna">loonyluna</a> auf Drupal.org & Github
+						</br>
 						<a href="https://twitter.com/ChosenLuna">@ChosenLuna</a> auf Twitter
-						<img src="images/erdfisch.png">
+						</br>
+						<img src="images/janet.png" width="200px" height="200px">
 				</section>
 
-				<section>
-					Drupal Entwickler bei <a href="https://erdfisch.de/">erdfisch</a> in Heidelberg, Germany
-					<br>
-					Zu finden unter <a href="https://www.drupal.org/u/fisherman90">fisherman90</a> auf Drupal.org und Github
-					<br>
+				<section data-background="images/ef-logo-freigestellt.png" data-background-size="2000px">
+					Frontend-Entwickler bei <a href="https://erdfisch.de/">erdfisch</a> in Heidelberg
+					</br>
+					Zu finden unter <a href="https://www.drupal.org/u/fisherman90">fisherman90</a> auf Drupal.org & Github
+					</br>
 					<a href="https://twitter.com/F90er">@F90er</a> auf Twitter
-					<img src="images/erdfisch.png">
+					</br>
+					<img src="images/peter-gerken-foto.1024x1024.jpg" width="200px" height="200px">
 				</section>
 
 				<section>
-					<div>Die Folien sind zu finden unter: <a href=" https://github.com/LoonyLuna/automated-css-regression-testing">https://github.com/LoonyLuna/automated-css-regression-testing</a></div>
+					<div>
+						<h1>Folien</h1>
+						<a href=" https://github.com/LoonyLuna/automated-css-regression-testing">https://github.com/LoonyLuna/automated-css-regression-testing</a>
+					</div>
 				</section>
 
 				<section>
-					<h1>What is the Drupal 8 User Guide?</h1>
+					<h2>Was ist Automated CSS Regression Testing?</h2>
 				</section>
 
 				<section>
-					<p>June 2015: <a href="https://groups.drupal.org/node/470648">Proposal to create a D8 User Manual</a></p>
-					<img src="images/2017-04-21-165201-userguide-proposal.png">
+					<h5>Leitfrage:</h5>
+					<h5 class="fragment">Wie sieht meine Webseite aus, nachdem ich Änderungen vorgenommen habe?</h5>
 				</section>
 
 				<section>
-					<h1>Motivation</h1>
-					<blockquote cite="https://groups.drupal.org/node/470648">
-						Quality documentation in multiple languages ... that would help a “Newcomer” or “Learner” persona make the transition to “Skilled”.
-					</blockquote>
+					<h2>Idealfall</h2>
+					<div class="fragment">
+						<img src="images/dog.jpg" width="300px" height="300px">
+						<p>Veränderungen sind nur an der "gewollten" Stelle erfolgt.</p>
+					</div>
 				</section>
 
 				<section>
-					<p>Drupal project page: <a href="https://www.drupal.org/project/user_guide">https://www.drupal.org/project/user_guide</a></p>
-					<p>HTML: <a href="https://www.drupal.org/docs/user_guide/en/index.html">https://www.drupal.org/docs/user_guide/en/index.html</a></p>
-					<p>PDF: <a href="http://bit.ly/d8userguide">http://bit.ly/d8userguide</a></p>
+					<h2>Worst Case</h2>
+					<div class="fragment">
+						<img src="images/css.gif">
+						<p>Veränderungen überall, bloß nicht da wo sie sein sollen.</p>
+					</div>
 				</section>
 
 				<section>
-					<img src="images/2017-04-21-160417-userguide-front-page.png">
+					<h2>Was tun, um das zu verhindern?</h2>
+				</section>
+				
+				<section>
+					<img src="images/Test_All_The_Things.jpg">
+					<p class="fragment">Von Hand? :(</p>
+				</section>
+				
+				<section>
+					<img src="images/circle%20of%20no.jpg">
 				</section>
 
 				<section>
-					<img src="images/2017-04-21-161419-what-is-drupal.png">
+					<h2> Deshalb: Automated CSS Regresstion Testing</h2>
+					<img src="images/excited.gif">
 				</section>
 
 				<section>
-					<img src="images/2017-04-21-155110-userguide-views.png">
+					<h5>Die Funktionsweise</h5>
+					<img src="images/output.png" style="border: none">
 				</section>
 
 				<section>
-					<img src="images/2017-04-21-155310-userguide-composer-and-git.png">
+					<h5>Das Tool</h5>
+					<!--Ich hasse Inline CSS auch, sorry!-->
+					<img src="images/phantomcss.png" width="300px"
+							 style="border: none;
+							 box-shadow: none;
+							 background-color: LightGray;
+							 padding: 5px">
+					<a href="https://github.com/Huddle/PhantomCSS">https://github.com/Huddle/PhantomCSS</a>
 				</section>
 
 				<section>
-					<img src="images/2017-04-21-155358-userguide-cache.png">
+					<h3>Was muss ich jetzt noch machen?</h3>
 				</section>
 
 				<section>
-					<img src="images/2017-04-21-155444-userguide-security.png">
+				<img src="images/endmeme.png">
 				</section>
-
-				<section>
-					<img src="images/2017-04-21-155608-userguide-glossary.png">
-				</section>
-
-				<section>
-					<img src="images/2017-04-21-155643-userguide-index.png">
-				</section>
-
-				<section>
-					<img src="images/2017-04-21-155745-userguide-attributions.png">
-				</section>
-
-				<section>
-				<p>Free and open-source, just like Drupal is</p>
-				<p class="fragment">Available in pdf, mobi, ebook format</p>
-				<p class="fragment">Organized and comprehensive</p>
-				<p class="fragment">Version controlled using git</p>
-				<p class="fragment">Curated and kept up-to-date by the Drupal community</p>
-				<p class="fragment">Anyone can contribute</p>
-				<p class="fragment">All contributions will get credited</p>
-				</section>
-
-				<section>
-				<h1>Translations</h1>
-				</section>
-
-				<section>
-					<img src="images/2017-04-21-174428-what-languages.png">
-				</section>
-
-				<section>
-				<h2>So how do we get a German translation started?</h2>
-				</section>
-
-				<!-- Explain the process -->
-				<section>
-				<p><a href="https://www.drupal.org/docs/user_guide_guidelines/pm-guide.html#pm-guide-translating">https://www.drupal.org/docs/user_guide_guidelines/pm-guide.html#pm-guide-translating</a></p>
-				<blockquote>
-Each language the User Guide will be translated into will need a team, which should normally be formed from the existing translation team for the software. As a prerequisite, the translation team should have already translated a large portion of the terms in the software user interface into their language.
-				</blockquote>
-				</section>
-
-				<section>
-					<img src="images/2017-04-13-161857.png">
-				</section>
-
-				<section>
-					<p><a href="https://www.drupal.org/node/2871836">https://www.drupal.org/node/2871836</a></p>
-					<p>How to get a translation group started?</p>
-					<blockquote>We would normally only advise setting up a translation team for the User Guide once the current version of Drupal 8 (at this time, 8.3.x) has a nearly 100% translation. The main reason is that the User Guide mentions a lot of text that is in the Drupal user interface, so that text needs translation before you start translating the User Guide.</blockquote>
-				</section>
-
-				<section>
-					<!-- Localization sprint in Vienna -->
-					<img src="images/2017-04-21-221655.png">
-				</section>
-
-				<section>
-				<h1>Three steps to heaven</h1>
-				</section>
-
-				<section>
-				<h3>Step 1: Get to 100% German Drupal User Interface</h3>
-				<p>Join <a href="drupal.slack.com/messages/localize-german">drupal.slack.com/messages/localize-german</a> (I can invite you if you need)<p>
-				<p>Go to Vienna on Wednesday 10 May or join the sprint remotely</p>
-				<p>Let's have translation sprints at *all* future German-speaking Drupal events</p>
-				</section>
-
-				<section>
-				<h3>Step 2: Form a team to translate the User Guide</h3>
-				<p><a href="https://www.drupal.org/docs/user_guide_guidelines/pm-guide.html#pm-guide-translating">https://www.drupal.org/docs/user_guide_guidelines/pm-guide.html#pm-guide-translating</a></p>
-				<blockquote>
-				Then, the team should choose a manager or managers for the User Guide translation project, and form a group specifically targeted at translating the User Guide.
-				</blockquote>
-				</section>
-
-				<section>
-				<img src="images/step-3-do-it-then-party-and-profit.jpg">
-				</section>
-
-				<!-- Need to get localization team on board -->
-
-				<!-- Coordination means managing this spreadsheet -->
-
-				<!-- Today's beginners are tomorrow's developers -->
-
-
-<!-- Top 7 contributors to Drupal 8 core: -->
-<!-- 2009+1323+1210+1046+946+716+715 = 7965 Commits -->
-<!-- Of those: dawehner/berdir/sun: -->
-<!-- 2009+946+715 = 3670 Commits = 46% -->
-
-<!-- What is the Drupal 8 user guide? -->
-<!-- Why was it created? -->
-<!-- What does it look like -->
-<!-- What is it for? What is it not for? -->
-<!-- Why is it useful -->
-<!-- How did it come about? -->
-
-<!-- We all start as site builders -->
-
-<!-- Why do we need a German translation -->
-<!-- How do we start the team for the German translation -->
-
-<!-- How did other translation teams start -->
-
-<!-- The elephant in the room -->
-<!-- German translation of Drupal 8 Core is at 66% -->
-<!-- https://twitter.com/mcaleaa/status/854358037989138436 -->
-
-<!-- Benefits -->
-<!-- Everyone can participate in the project -->
-<!-- ... and get credit for themselves or their employer -->
-
-<!-- It's free and open-source, managed and curated, kept up-to-date -->
-
 
 			</div>
 
