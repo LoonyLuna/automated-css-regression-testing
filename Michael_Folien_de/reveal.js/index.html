@@ -1,0 +1,598 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Drupal 8 User Guide - an on-ramp to the Drupal learning curve</title>
+
+		<meta name="description" content="Drupal 8 User Guide - let's have a German Translation">
+		<meta name="author" content="Janet Lehmann, Peter Gerken">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/moon.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylsheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-background="images/ef-logo-freigestellt.png">
+					<h1>Drupal 8 User Guide</h1>
+					<!-- <img src="images/druploisius-small.png"> -->
+					<h3>an on-ramp to the Drupal learning curve</h3>
+					<p style="color:white;">
+						Janet Lehmann
+					<br>
+						Peter Gerken
+					</p>
+				</section>
+
+        <section>
+					<h3>Janet Lehmann</h3>
+          Duale Studentin bei <a href="https://erdfisch.de/">erdfisch</a> in Heidelberg, Germany
+          </br>
+          Zu finden unter <a href="https://www.drupal.org/u/loonyluna">loonyluna</a> auf Drupal.org & Github
+          </br>
+          <a href="https://twitter.com/ChosenLuna">@ChosenLuna</a> auf Twitter
+          </br>
+          <img src="images/janet.jpg" height="200px">
+        </section>
+
+				<section>
+						<h3>Peter Gerken</h3>
+						Frontend Entwickler bei <a href="https://erdfisch.de/">erdfisch</a> in Heidelberg, Germany
+	          </br>
+	          Zu finden unter <a href="https://www.drupal.org/u/fisherman90">fisherman90</a> auf Drupal.org & Github
+	          </br>
+	          <a href="https://twitter.com/F90er">@F90er</a> auf Twitter
+	          </br>
+	          <img src="images/peter.jpg" height="200px">
+				</section>
+
+				<section>
+						<h3>Michael Lenahan</h3>
+						Drupal Developer bei <a href="https://erdfisch.de/">erdfisch</a> in Heidelberg, Germany
+	          </br>
+	          <a href="https://www.drupal.org/u/michaellenahan">michaellenahan</a> auf Drupal.org & Github
+	          </br>
+	          <a href="https://twitter.com/mcaleaa">@mcaleaa</a> auf Twitter
+	          </br>
+	          <img src="scraper/michaellenahan.png" height="200px">
+				</section>
+
+				<section>
+						<!-- Drupal Developers at <a href="https://erdfisch.de/">erdfisch</a> in Heidelberg, Germany -->
+						<!-- <br> -->
+						<img src="images/erdfisch.png">
+				</section>
+
+				<section>
+					<h2>Drupal ist schwer zu lernen</h2>
+					<img src="images/drupal-learning-curve.png">
+				</section>
+
+				<section>
+					<h3>Es gibt zwei Arten von Menschen auf dieser Welt</h3>
+					<ul>
+						<li>Jene, die es hassen Dokumentationen zu schreiben</li>
+						<li class="fragment">Und jene, die es lieben Dokumentationen zu schreiben, aber nie dazu kommen es wirklich zu tun</li>
+						<li class="fragment">Naja, das stimmt nicht so ganz...</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Diese Leute haben bereits mitgewirkt am User Guide, bei der englischen Version oder beim übersetzen</h2>
+				</section>
+
+				<section>
+					<a href="https://www.drupal.org/u/jhodgdon" title=""><img src="images/jhodgdon.jpg" height="100px"></a>
+					<a href="https://www.drupal.org/u/eojthebrave"><img src="images/eojthebrave.png" height="100px"></a>
+					<a href="https://www.drupal.org/u/jojyja"><img src="scraper/jojyja.jpg" height="100px"></a>
+					<a href="https://www.drupal.org/u/balu-ertl"><img src="images/balu-ertl.png" height="100px"></a>
+					<a href="https://www.drupal.org/u/kabetani"><img src="images/kabetani.jpg" height="100px"></a>
+
+					<img src="scraper/aboros.jpg" height="100px"></a>
+					<img src="scraper/ajayvi.jpg" height="100px"></a>
+					<img src="scraper/AnnGreazel.png" height="100px"></a>
+					<img src="scraper/avanraaphorst.jpg" height="100px"></a>
+					<img src="scraper/balagan.jpg" height="100px"></a>
+					<img src="scraper/batigolix.jpg" height="100px"></a>
+					<img src="scraper/billimarie.jpg" height="100px"></a>
+					<img src="scraper/bsnodgrass.jpg" height="100px"></a>
+					<img src="scraper/bwinett.jpg" height="100px"></a>
+					<img src="scraper/chishah92.jpg" height="100px"></a>
+					<img src="scraper/ckrina.jpg" height="100px"></a>
+					<img src="scraper/cleverington.jpg" height="100px"></a>
+					<img src="scraper/dalin.jpg" height="100px"></a>
+					<img src="scraper/dgorton.jpg" height="100px"></a>
+					<img src="scraper/diana.lakatos.png" height="100px"></a>
+					<img src="scraper/dimaro.jpg" height="100px"></a>
+					<img src="scraper/drumm.png" height="100px"></a>
+					<img src="scraper/eelkeblok.jpg" height="100px"></a>
+					<img src="scraper/espurnes.jpg" height="100px"></a>
+					<img src="scraper/francescbassas.jpg" height="100px"></a>
+					<img src="scraper/gdunham.png" height="100px"></a>
+					<img src="scraper/gisle.png" height="100px"></a>
+					<img src="scraper/HaloFX.jpg" height="100px"></a>
+					<img src="scraper/hey_germano.png" height="100px"></a>
+					<img src="scraper/hgoto.jpg" height="100px"></a>
+					<img src="scraper/ifrik.jpg" height="100px"></a>
+					<img src="scraper/JackProbst.png" height="100px"></a>
+				</section>
+				<section>
+					<img src="scraper/jerseycheese.jpg" height="100px"></a>
+					<img src="scraper/jfmacdonald.jpg" height="100px"></a>
+					<img src="scraper/jpraco.jpg" height="100px"></a>
+					<img src="scraper/juanolalla.jpg" height="100px"></a>
+					<img src="scraper/jungle.jpg" height="100px"></a>
+					<img src="scraper/kamalkantpansari.jpg" height="100px"></a>
+					<img src="scraper/KarlKedrovsky.jpg" height="100px"></a>
+					<img src="scraper/ken_taguchi.png" height="100px"></a>
+					<img src="scraper/kvantomme.jpg" height="100px"></a>
+					<img src="scraper/lluvigne.jpg" height="100px"></a>
+					<img src="scraper/lolk.jpg" height="100px"></a>
+					<img src="scraper/mericamps.jpg" height="100px"></a>
+					<img src="scraper/metzlerd.jpg" height="100px"></a>
+					<img src="scraper/michaellenahan.png" height="100px"></a>
+					<img src="scraper/mndonx.jpg" height="100px"></a>
+					<img src="scraper/novid.jpg" height="100px"></a>
+					<img src="scraper/Pandelon.jpg" height="100px"></a>
+					<img src="scraper/petycomp.jpg" height="100px"></a>
+					<img src="scraper/podarok.jpg" height="100px"></a>
+					<img src="scraper/rvilar.jpg" height="100px"></a>
+					<img src="scraper/SebCorbin.jpg" height="100px"></a>
+					<img src="scraper/Sree.jpg" height="100px"></a>
+					<img src="scraper/supriyarajgopal.jpg" height="100px"></a>
+					<img src="scraper/surendramohan.png" height="100px"></a>
+					<img src="scraper/suryanto.jpg" height="100px"></a>
+					<img src="scraper/swarad07.jpg" height="100px"></a>
+					<img src="scraper/vegantriathlete.jpg" height="100px"></a>
+					<img src="scraper/wturrell.jpg" height="100px"></a>
+					<img src="scraper/yrvyn.jpg" height="100px"></a>
+					<img src="scraper/zsofi.major.jpg" height="100px"></a>
+				</section>
+
+				<section>
+					<h2>Ein bisschen Geschichte</h2>
+				</section>
+
+				<section>
+					<p>Juni 2015: <a href="https://groups.drupal.org/node/470648">Vorschlag einen D8 User Guide zu kreieren</a></p>
+					<img src="images/2017-04-21-165201-userguide-proposal.png">
+				</section>
+
+				<section>
+					<h1>Motivation</h1>
+					<blockquote cite="https://groups.drupal.org/node/470648">
+						Quality documentation in multiple languages ... that would help a “<span style="color:white">Newcomer</span>” or “<span style="color:white">Learner</span>” persona make the transition to “<span style="color:white">Skilled</span>”.
+					</blockquote>
+
+					<aside class="notes">
+						Wir wollen eine hochqualitative Dokumentation, die einem Newcomer oder Learner dabei helfen wird in den Stand Skilled überzugehen.
+					</aside>
+				</section>
+
+<!-- 				<section>
+					<p><a href="https://www.lullabot.com/articles/cross-pollination-between-drupal-and-wordpress">https://www.lullabot.com/articles/cross-pollination-between-drupal-and-wordpress</a></p>
+					<blockquote cite="https://www.lullabot.com/articles/cross-pollination-between-drupal-and-wordpress">
+To continue to grow, Drupal needs to enable non-developers. New non-developers can eventually turn into developers, and will become “new blood” in the community.
+					</blockquote>
+				</section>
+ -->
+				<section>
+					<p>Drupal Projektseite: <a href="https://www.drupal.org/project/user_guide">https://www.drupal.org/project/user_guide</a></p>
+					<p>HTML (Englisch): <a href="https://www.drupal.org/docs/user_guide/en/index.html">https://www.drupal.org/docs/user_guide/en/index.html</a></p>
+					<p>PDF (Englisch): <a href="http://bit.ly/drupal-user-guide">http://bit.ly/drupal-user-guide</a></p>
+				</section>
+
+				<section>
+					<img src="images/2017-04-21-160417-userguide-front-page.png">
+
+					<aside class="notes">
+						Deckblatt des User Guides </br>
+						So sieht er aus!
+					</aside>
+				</section>
+
+				<section>
+					<img src="images/2017-04-21-161419-what-is-drupal.png">
+
+					<aside class="notes">
+						Das erste Kapitel des User Guide. </br>
+						Hier sehen wir, dass der User Guide von "ganz leicht - grundlegend"...
+					</aside>
+				</section>
+
+				<section>
+					<img src="images/2017-04-21-155110-userguide-views.png">
+
+					<aside class="notes">
+						... Beispiele enthält...
+					</aside>
+				</section>
+
+				<section>
+					<img src="images/2017-04-21-155310-userguide-composer-and-git.png">
+
+					<aside class="notes">
+						... bis "fortgeschritten" reicht und tiefer in die Materie geht.
+					</aside>
+				</section>
+
+				<section>
+					<img src="images/2017-04-21-155358-userguide-cache.png">
+
+					<aside class="notes">
+						... und tiefer...
+					</aside>
+				</section>
+
+				<section>
+					<img src="images/2017-04-21-155444-userguide-security.png">
+					<aside class="notes">
+						... und tiefer.
+					</aside>
+				</section>
+
+				<section>
+					<img src="images/2017-04-21-155608-userguide-glossary.png">
+
+					<aside class="notes">
+						Des Weiteren befindet sich auf ein Glossar im User Guide, welches als Schnellnachschlagewerk dienen soll.
+					</aside>
+				</section>
+
+				<section>
+					<img src="images/2017-04-21-155643-userguide-index.png">
+					<aside class="notes">
+						Und natürlich auch ein Inhaltsverzeichnis, falls man tiefere Informationen zu einem Thema brauch.
+					</aside>
+				</section>
+
+				<section>
+					<img src="images/2017-04-21-155745-userguide-attributions.png">
+
+					<aside class="notes">
+						Im Anhang, die Mitwirkenden.
+					</aside>
+				</section>
+
+				<section>
+					<h3>Diese Trainings-Materialien wurden bereits geschrieben, warum sollte man sie also nicht benutzen?</h3>
+					<ul>
+					<li>Es ist schwierig Zeit zu finden, um Dokumentationen für Klienten zu schreiben</li>
+					<li>Benutzt stattdessen den User Guide und ändert ihn für den Klienten ab</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Kostenlos und Open-Source, so wie Drupal</h3>
+					<ul>
+					<li>Ändere den User Guide für die eigenen Zwecke</li>
+					<li class="fragment">Nimm die Parts raus, die nicht gebraucht werden</li>
+					<li class="fragment">Füge die Parts ein, die gebraucht werden <span class="fragment">angepasst an die Bedürfnisse des Klienten</span></li>
+					<li class="fragment">Kennzeichne den User Guide ... <span class="fragment">mit der Marke der eigenen Firma</span></li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Erhältlich in allen Formaten</h3>
+					<ul>
+						<li>html auf drupal.org</li>
+						<li>pdf</li>
+						<li>mobi</li>
+						<li>ebook</li>
+						<li>Amazon azw3</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Wird up-to-date gehalten, für jede Version von Drupal</h3>
+					<ul>
+						<li>In Version 8.5 kommen Verbesserungen für Media?</li>
+						<li>Es wird ein issue erstellt und der User Guide wird aktualisiert.</li>
+						<li>Auch die Screenshots werden für jede Version erneuert.</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Vorschlag für Update eines Szenarios</h3>
+					<ul>
+						<li>Momentanes Szenario ist der "farmer's market"</li>
+						<li class="fragment">Wie wäre es damit das Umami Food Magazine als Szenario zu benutzen??</li>
+						<li class="fragment">"Out of the Box experience intiative"</li>
+					</ul>
+
+					<aside class="notes">
+						Wer von euch kennt die Umami Initiative?
+						Für alle die es nicht kennen, hier ein Screenshot...
+					</aside>
+				</section>
+
+				<section>
+					<img src="images/umami.png">
+				</section>
+
+				<section>
+				<p>Kostenlos und Open-Source, so wie Drupal</p>
+				<p class="fragment">Erhältlich in pdf, mobi, ebook Format</p>
+				<p class="fragment">Organisiert und umfangreich</p>
+				<p class="fragment">Versionierungskontrolle durch Git</p>
+				<p class="fragment">Kuratiert und up-to-date gehalten durch die Drupal-Community</p>
+				<p class="fragment">Jeder kann mitmachen</p>
+				<p class="fragment">Alle Mitwirkenden kriegen Commits anerkannt</p>
+
+					<aside class="notes">
+						Hier nochmal alle Vorteile zusammengefasst.
+					</aside>
+				</section>
+
+				<section>
+					<h2>Übersetzungen</h2>
+					<p>(so könnte es aussehen)</p>
+				</section>
+
+				<section>
+					<p>Persisch</p>
+					<img src="images/persian.png">
+				</section>
+
+				<section>
+					<p> Japanisch</p>
+					<img src="images/japanese.png">
+				</section>
+
+				<section>
+					<p>Ungarisch</p>
+					<img src="images/hungarian.png">
+				</section>
+
+				<section>
+					<h2>Deutsche Übersetzung</h2>
+					<h2>German translation</h2>
+				</section>
+
+				<section>
+					<h3>Die Reihenfolge in welcher wir den User Guide übersetzen wollen</h3>
+					<ul>
+					<li>Glossar und Konzepte als erstes</li>
+					<li>Wir starten mit glossary.txt und allen concept-*.txt Dateien</li>
+					<li>Dann Übersetzen wir den Rest</li>
+					</ul>
+
+					<aside class="notes">
+						Vorschlag/Vorstellung wie der User-Guide übersetzt werden soll, laut der Organisation (PM-Team)
+					</aside>
+				</section>
+
+				<section>
+					<h3>Hands on: Wie man eine Seite übersetzt</h3>
+				</section>
+
+				<section>
+					<img src="images/understanding-chapter-5.png">
+
+					<aside class="notes">
+						Auf drupal.org gehen auf dei Projektseite </br>
+						Zur Issue Queue gehen
+					</aside>
+				</section>
+
+				<section>
+					<img src="images/understanding-chapter-6.png">
+
+					<aside class="notes">
+						Bei Component: DE Translation </br>
+						Issue Tracker ist zu finden unter [DE] Translation Tracker
+					</aside>
+				</section>
+
+				<section>
+					<img src="images/understanding-chapter-7.png">
+
+					<aside class="notes">
+						Im Translation Tracker sind die einzelnen Issues aufgelistet, hier einfach eins raussuchen </br>
+						(Im Beispiel hier ist es: guide.txt)
+					</aside>
+				</section>
+
+				<section>
+					<img src="images/understanding-chapter-8.png">
+
+					<aside class="notes">
+						Im Issue selbst, kann die Übersetzung und die dazugehörigen Reviews diskutiert werden </br>
+						NOTICE: Nützliche Links enthalten alles was man braucht, wenn man neu ist
+					</aside>
+				</section>
+
+				<section>
+					<img src="images/understanding-chapter-1.png">
+
+					<aside class="notes">
+						Noch nicht übersetztes Kapitel
+					</aside>
+				</section>
+
+				<section>
+					<img src="images/understanding-chapter-2.png">
+
+					<aside class="notes">
+						Zum übersetzen der Datei auf "Edit AsciiDoc source file" klicken
+					</aside>
+				</section>
+
+				<section>
+					<img src="images/understanding-chapter-3.png">
+
+					<aside class="notes">
+						Der Original Text ist einlesbar über den oberen Link </br>
+						Mit dem Download-Button kann die Datei auch runtergeladen werden, um lokal dran arbeiten zu können
+					</aside>
+				</section>
+
+				<section>
+					<img src="images/understanding-chapter-4.png">
+
+					<aside class="notes">
+						Jetzt kann das überstezen losgehen! </br>
+						Dinge in Klammern oder includes bitte nicht verändern! </br>
+						Alle Überschriften und normale Texte müssen übersetzt werden
+					</aside>
+				</section>
+
+				<section>
+					<img src="images/understanding-chapter-9.png">
+
+					<aside class="notes">
+						In einem Kommentar kann jetzt die übersetzte Datei angehangen werden </br>
+						Jemand wird dies reviewen und Feedback geben
+					</aside>
+				</section>
+
+				<section>
+					<img src="images/understanding-chapter-10.png">
+
+					<aside class="notes">
+						Wenn der Review-Prozess durch ist, wird die Übersetzung commited und ihr bekommt einen Commit </br>
+						NOTICE: Dies ist nicht das Ende om Lied. Wenn alles übersetzt ist, muss nochmals alles auf Kosistenz geprüft werden!
+					</aside>
+				</section>
+
+				<section>
+					<img src="images/understanding-chapter-11.png">
+
+					<aside class="notes">
+						Jeder der überstezt und reviewed wird im Commit erwähnt und bekommt diesen gutgeschrieben
+					</aside>
+				</section>
+
+				<section>
+					<img src="images/understanding-chapter-12.png">
+
+					<aside class="notes">
+						Wie man hier zum Beispeil sehen kann...
+					</aside>
+				</section>
+
+				<section>
+					<h3>Also macht mit und kreiert den deutschen User Guide!</h3>
+					<ul>
+						<li>Helft beim Schreiben</li>
+						<li>Helft beim reviewen</li>
+						<li>Helft beim organisieren</li>
+						<li>Helft dabei Sprints bei Meetups und Camps zu organisieren</li>
+					</ul>
+				</section>
+			</div>
+
+		</div>
+
+		<div id="myLogo" style="background: url("logo.png");
+			position: absolute;
+			bottom: 100px;
+			right: 100px;
+			width: 100px;
+			height: 100px;"></div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				// transition: 'slide', // none/fade/slide/convex/concave/zoom
+				transition: 'fade', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+		<style type="text/css">
+		    /* 1. Style header/footer <div> so they are positioned as desired. */
+		    #header-left {
+		        position: absolute;
+		        top: 0%;
+		        left: 0%;
+		    }
+		    #header-right {
+		        position: absolute;
+		        top: 0%;
+		        right: 0%;
+		    }
+		    #footer-left {
+		        position: absolute;
+		        bottom: 50px;
+		        left: 50px;
+		    }
+		</style>
+
+		<!-- 2. Create hidden header/footer <div> -->
+		<div id="hidden" style="display:none;">
+		    <div id="header">
+		        <div id="header-left">
+		        </div>
+		        <div id="header-right">
+		        </div>
+		        <div id="footer-left">
+		        	<!-- <a href="https://twitter.com/hashtag/dcffm17">#dcffm17</a> -->
+		        	<!-- <br> -->
+							<!-- <a href="https://erdfisch.de/">erdfisch</a> -->
+		        </div>
+		    </div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+		<script type="text/javascript">
+		    // 3. On Reveal.js ready event, copy header/footer <div> into each `.slide-background` <div>
+		    var header = $('#header').html();
+		    if ( window.location.search.match( /print-pdf/gi ) ) {
+		        Reveal.addEventListener( 'ready', function( event ) {
+		            $('.slide-background').append(header);
+		        });
+		    }
+		    else {
+		        $('div.reveal').append(header);
+		   }
+		</script>
+
+	</body>
+</html>
