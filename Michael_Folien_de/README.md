@@ -1,17 +1,17 @@
 # Drupal 8 User Guide - an on-ramp to the Drupal Learning Curve
 
-These are the slides for a talk given at Drupalcamp Schwerin on Saturday 21 October 2017:
+Dies sind die Folien für die Session "Drupal 8 User Guide - an on-ramp to the Drupal Learning Curve" die am 21.10.2017 auf dem Drupalcamp in Schwerin gehalten wurde:
 
 https://dcsn17.drupalcamp.de/node/30
 
-The pdf of the slides can be downloaded here:
+Das PDF kann hier heruntergeladen werden (Englisch):
 
 https://github.com/michaellenahan/drupal-8-user-guide-drupalcamp-schwerin-2017/raw/master/drupal-8-user-guide-translation.pdf
 
-The slides were created using [reveal.js](https://github.com/hakimel/reveal.js).
+Die Folien wurden erstellt mit: [reveal.js](https://github.com/hakimel/reveal.js).
 
-The pdf version was generated using [decktape](https://github.com/astefanutti/decktape).
+Die PDF Version wurde generiert mit: [decktape](https://github.com/astefanutti/decktape).
 
-Please feel free to adapt and re-use these slides, see LICENSE.
+Selbstverständlich können diese Folien adaptiert und erneut benutzt werden, siehe LICENSE.
 
-To get started, clone this repository and then open reveal.js/index.html in your browser.
+Um zu starten, klone dieses Repository und öffne reveal.js/index.html in deinem Browser.

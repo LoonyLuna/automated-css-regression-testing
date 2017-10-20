@@ -2,10 +2,6 @@
 
 These are the slides for a talk given at Drupalcamp Schwerin:
 
-The pdf of the slides can be downloaded here:
-
-https://github.com/loonyluna/automated-css-regression-testing/raw/master/automated-css-regression-testing.pdf
-
 The slides were created using [reveal.js](https://github.com/hakimel/reveal.js).
 
 The pdf version was generated using [decktape](https://github.com/astefanutti/decktape).
